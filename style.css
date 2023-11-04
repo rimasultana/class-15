@@ -44,6 +44,9 @@ margin: auto;
 .manu{width: 80%;
 
 }
+.icon{
+    display: none;
+}
 .manu ul{
     list-style: none;
     display: flex;
@@ -91,5 +94,19 @@ transition: 0.5;
 .bannar-content a:hover{
     background: #fff;
     color: black;
+
+}
+
+
+@media(max-width:700px){
+    .manu{
+        display: none;
+    }
+    .icon{
+        display: block;
+        width: 80%;
+        text-align: right;
+        font-size: 40px;
+    }
 
 }

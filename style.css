@@ -176,7 +176,20 @@ bottom:100%;
 .member:hover .member-overlay{
     bottom:0;
 }
+/* FOOTER */
 
+footer{
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+    
+}
+footer p a{
+    color: aqua;
+}
 
 
 

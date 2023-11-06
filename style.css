@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+TAS+Beginner&family=Kenia&family=Oswald:wght@600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
 }
 body{
@@ -34,9 +42,15 @@ margin: auto;
 padding: 0%;
 }
 .nav-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .logo{width: 15%;
@@ -50,8 +64,12 @@ padding: 0%;
 }
 .manu ul{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     
     
 
@@ -79,7 +97,9 @@ padding: 0%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
 }
 .bannar-content h1{
@@ -90,6 +110,8 @@ color: white;
 border: 5px solid #fff;
 padding: 10px 20px;
 text-transform: uppercase;
+-webkit-transition: 0.5;
+-o-transition: 0.5;
 transition: 0.5;
 }
 .bannar-content a:hover{
@@ -117,9 +139,14 @@ transition: 0.5;
     font-size: 18px;
 }
 .service-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
 }
 .item{
@@ -144,9 +171,14 @@ transition: 0.5;
     background: #fff;
 }
 .team-members{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
 }
 .member{
@@ -161,12 +193,20 @@ transition: 0.5;
     position: absolute;
 bottom:100%;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     overflow: hidden;
 }
@@ -230,9 +270,16 @@ footer p a{
 }
 @media(max-width:500px){
     .service-item{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 }
 .item p{
     width: 164px;
@@ -244,9 +291,12 @@ footer p a{
     .member{
         width: 49%;
     }
+    
 }
 @media(max-width:550px){
     .member{
         width: 100%;
+        margin: 10px 0;
     }
+
 }
